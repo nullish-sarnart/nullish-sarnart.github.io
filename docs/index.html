@@ -3,21 +3,12 @@
   <head>
     <title>sarnart.dev | home</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="module" src="scripts/embed-html.js"></script>
   </head>
   <body>
-    <div class="header">&nbsp;</div>
-    <div class="repeat">&nbsp;</div>
-    <div id="badge">sarnart.dev 0.1</div>
+    <embed-html src="header.html" cache>Loading...</embed-html>
     <div id="container">
-      <div id="menu">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="plan.html">PLAN</a></li>
-          <li><a href="gratitudes.html">GRATITUDES</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
-      </div>
+      <embed-html src="menu.html" cache>Loading...</embed-html>
       <div id="content">
         <h1>HOME</h1>
 
@@ -34,13 +25,10 @@
           maybe for as long as you've been alive.
         </p>
 
-        <p>
-          Thank you for caring enough to be here. I see you. I appreciate you.
-        </p>
+        <p>Thank you for caring enough to be here.</p>
       </div>
       <div id="footer">
-        Please <a href="mailto:web01@sarnart.dev">email me</a> if you liked this
-        site, or you just want to say hi :)
+        <embed-html src="footer.html" cache>Loading...</embed-html>
       </div>
     </div>
   </body>
